@@ -1,0 +1,1 @@
+create table user_details (id int, username varchar(255), useremail varchar(255));

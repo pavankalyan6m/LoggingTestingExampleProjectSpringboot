@@ -12,18 +12,21 @@ import java.util.List;
 @RequestMapping("/fb-api")
 public class UserController {
 
+    // Inject the UserService using the @Autowired annotation
     @Autowired
     private UserService service;
 
-      @GetMapping("/getAllUsers")
-      public List<User> getAllUsers()
-       {
-           return service.getAllFBUsers();
-       }
+    // Define an HTTP GET endpoint for retrieving all users
+    @GetMapping("/getAllUsers")
+    public List<User> getAllUsers() {
+        // Call the getAllFBUsers() method from the UserService to retrieve a list of users
+        return service.getAllFBUsers();
+    }
 
-       @PostMapping("/createUser")
-       public void createUser(@RequestBody User user)
-       {
-           service.insertNewUser(user);
-       }
+    // Define an HTTP POST endpoint for creating a new user
+    @PostMapping("/createUser")
+    public void createUser(@RequestBody User user) {
+        // Call the insertNewUser() method from the UserService to create a new user
+        service.insertNewUser(user);
+    }
 }

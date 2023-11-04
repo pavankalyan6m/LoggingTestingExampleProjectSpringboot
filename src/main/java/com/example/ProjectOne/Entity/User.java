@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 public class User {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.AUTO) "To Auto Increment primary key Value"
+    @GeneratedValue(strategy = GenerationType.AUTO)//"To Auto Increment primary key Value"
     @Column(name = "user_id")
     private int userId;
 

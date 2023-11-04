@@ -1,17 +1,21 @@
 package com.example.ProjectOne.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 
 @Entity
-@Table(name ="user_details")
+@Table(name ="fb_users")
 public class User {
 
     @Id
+    //@GeneratedValue(strategy = GenerationType.AUTO) "To Auto Increment primary key Value"
+    @Column(name = "user_id")
     private int userId;
+
+    @Column(name = "user_name")
     private String username;
+
+    @Column(name = "user_email")
     private String userEmail;
 
 

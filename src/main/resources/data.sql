@@ -1,1 +1,2 @@
-create table user_details (id int, username varchar(255), useremail varchar(255));
+create table if not exists fb_users (user_id int, user_name varchar(255), user_email varchar(255));
+insert into fb_users (user_id,user_name,user_email) values (100, 'Srikanth', 'srikanthpds05@gmail.com');

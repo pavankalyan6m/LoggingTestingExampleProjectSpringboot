@@ -1,0 +1,13 @@
+"2023-11-07 20:12:16 - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+""2023-11-07 20:12:16 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30b6ffe0, started on Tue Nov 07 20:03:15 IST 2023
+""2023-11-07 20:12:16 - Stopping beans in phase 2147482623
+""2023-11-07 20:12:16 - Bean 'webServerGracefulShutdown' completed its stop procedure
+""2023-11-07 20:12:16 - Stopping beans in phase 2147481599
+""2023-11-07 20:12:16 - Bean 'webServerStartStop' completed its stop procedure
+""2023-11-07 20:12:16 - Stopping beans in phase -2147483647
+""2023-11-07 20:12:16 - Bean 'springBootLoggingLifecycle' completed its stop procedure
+""2023-11-07 20:12:16 - Shutting down ExecutorService 'applicationTaskExecutor'
+""2023-11-07 20:12:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2023-11-07 20:12:16 - HikariPool-1 - Shutdown initiated...
+""2023-11-07 20:12:16 - HikariPool-1 - Shutdown completed.
+"

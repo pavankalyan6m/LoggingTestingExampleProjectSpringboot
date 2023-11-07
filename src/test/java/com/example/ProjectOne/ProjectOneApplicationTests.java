@@ -31,7 +31,7 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
-@Slf4j
+@Slf4j //used for logging
 class ProjectOneApplicationTests {
 
 	//private static final Logger logger = LoggerFactory.getLogger(ProjectOneApplicationTests.class);

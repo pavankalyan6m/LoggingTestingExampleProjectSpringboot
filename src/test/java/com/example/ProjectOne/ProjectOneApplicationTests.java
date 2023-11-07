@@ -25,7 +25,6 @@ import java.util.Arrays;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -44,7 +43,6 @@ class ProjectOneApplicationTests {
 
 	@Mock
 	private UserJpaRepository userJpaRepository;
-
 
 	private MockMvc mockMvc;
 

@@ -4,8 +4,12 @@ import com.example.ProjectOne.Entity.User;
 import com.example.ProjectOne.Controller.UserController;
 import com.example.ProjectOne.Repository.UserJpaRepository;
 import com.example.ProjectOne.Service.UserService;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.logging.LogFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.logging.Logger;
+import org.junit.platform.commons.logging.LoggerFactory;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -27,7 +31,10 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
+@Slf4j
 class ProjectOneApplicationTests {
+
+	//private static final Logger logger = LoggerFactory.getLogger(ProjectOneApplicationTests.class);
 
 	@InjectMocks
 	private UserController userController;
@@ -102,6 +109,10 @@ class ProjectOneApplicationTests {
 		userJpaRepository.save(user1);
 		userJpaRepository.save(user2);
 		userJpaRepository.save(user3);
+
+
+		log.info("inside deleteByUserId test method");
+		log.info("users inserted successfully...");
 
 		int user_id = 2;
 

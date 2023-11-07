@@ -48,6 +48,15 @@ public class User {
     }
 
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                '}';
+    }
+
     //non-parameterized constructor
     public User() {
     }
@@ -58,7 +67,6 @@ public class User {
         this.username = username;
         this.userEmail = userEmail;
     }
-
 
 
 }
